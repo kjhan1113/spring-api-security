@@ -1,8 +1,10 @@
 HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+
+application.properties
+# application.yml
+
+.DS_Store
+Thumbs.db
 
 ### STS ###
 .apt_generated
@@ -14,18 +16,22 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
 out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
 ### Eclipse ###
-.metadata/
+.apt_generated
 .classpath
+.factorypath
 .project
-.settings/
-*.launch
+.settings
+.springBeans
+.sts4-cache
 
 ### NetBeans ###
 /nbproject/private/
@@ -42,19 +48,16 @@ build/
 
 
 ### Gradle ###
-.gradle/
-build/
+.gradle
+/build/
 !gradle/wrapper/gradle-wrapper.jar
 
 ### Maven ###
 target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.next
-pom.xml.release
-pom.xml.war
-pom.xml.ear
-pom.xml.bundle
-pom.xml.lib.properties
-release.properties
-pom.xml.releaseBackup
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/

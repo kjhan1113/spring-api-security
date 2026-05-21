@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_api_security
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password:
+
+logging:
+  level:
+    root: info
+
+    # 3. Spring Boot framework log level
+    org.springframework.web: info
+    org.springframework.security: debug
+
+    # 4. PostgreSQL and JPA query parameter
+    org.hibernate.SQL: debug
+    org.hibernate.orm.jdbc.bind: trace
+
+  # 5. log pattern in console
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
+kind: Application
